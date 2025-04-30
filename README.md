@@ -17,7 +17,9 @@ System agnostic anime inspired aniamtion animations
 
 ## Features
 ### Demon Slayer Transitions
-https://github.com/user-attachments/assets/70da22ee-2ec6-4866-b15e-ecac28061c8c
+https://github.com/user-attachments/assets/f5d4552c-d6fc-4ea2-a1f7-abc14440c59e
+
+
 
 ## Changelog
 You can access the changelog [here](/CHANGELOG.md).
