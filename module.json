@@ -37,6 +37,18 @@
       "path": "languages/en.json"
     }
   ],
+  "packs": [
+    {
+      "name": "genga-animations",
+      "label": "Genga Animations",
+      "path": "packs/genga-animations",
+      "type": "Macro",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
   "url": "#{URL}#",
   "manifest": "#{MANIFEST}#",
   "download": "#{DOWNLOAD}#",

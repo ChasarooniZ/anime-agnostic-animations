@@ -1,14 +1,17 @@
 import { tokenImage } from "../lib/misc.js";
 
-export async function demonSlayerTransition({
-  bg = "pics/scuffed_ds_transition_bg.webp",
-  art = [],
-  useCharacters = false,
-  duration = 2500,
-  sfx = "",
-  volume = 0.5,
-  sfxDelay = 0,
-}) {
+export async function demonSlayerTransition(
+  config = {
+    bg: "modules/genga/assets/demon-slayer-transitions/scuffed_DS_Transition_BG.webp",
+    art: [],
+    useCharacters: false,
+    duration: 2500,
+    sfx: "modules/genga/assets/demon-slayer-transitions/bongo-drum-roll.ogg",
+    volume: 0.5,
+    sfxDelay: 0,
+  }
+) {
+  const { bg, art, useCharacters, duration, sfx, volume, sfxDelay } = config;
   let final_art = art;
   if (art.length === 0) {
     if (canvas.tokens.controlled.length > 0 && !useCharacters) {
@@ -20,7 +23,7 @@ export async function demonSlayerTransition({
     }
   }
 
-  const anchorAMT = 1 / (final_art.length + 1);
+  const anchorAMT = Math.round((1 / (final_art.length + 1)) * 10) / 10;
 
   let seq = new Sequence()
     .sound()
@@ -42,12 +45,12 @@ export async function demonSlayerTransition({
       .screenSpace()
       .screenSpaceAboveUI()
       .screenSpaceScale({ fitY: true, ratioX: true })
-      .screenSpaceAnchor({ x: anchorAMT * cnt, y: 0.5 })
+      .screenSpaceAnchor({ x: anchorAMT * cnt + 1, y: 0.5 })
       .scale(0.4)
       .duration(duration)
       .animateProperty("effect", "position.x", {
-        from: 1,
-        to: -0.5,
+        from: 0,
+        to: -1.5,
         duration: duration,
         screenSpace: true,
       })
