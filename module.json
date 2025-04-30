@@ -16,7 +16,8 @@
     }
   ],
   "relationships": {
-    "systems": [
+    "systems": [],
+    "requires": [
       {
         "id": "sequencer",
         "type": "module",
@@ -26,12 +27,9 @@
           "verified": "3.4.9"
         }
       }
-    ],
-    "requires": []
+    ]
   },
   "esmodules": ["scripts/module.js"],
-  "scripts": ["scripts/lib/lib.js"],
-  "styles": ["styles/module.css"],
   "languages": [
     {
       "lang": "en",
@@ -43,11 +41,5 @@
   "manifest": "#{MANIFEST}#",
   "download": "#{DOWNLOAD}#",
   "license": "LICENSE",
-  "readme": "README.md",
-  "media": [
-    {
-      "type": "icon",
-      "url": "https://avatars2.githubusercontent.com/u/71292812?s=400&u=ccdb4eeb7abf551ca8f314e5a9bfd0479a4d3d41&v=4"
-    }
-  ]
+  "readme": "README.md"
 }
