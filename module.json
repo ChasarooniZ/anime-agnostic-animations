@@ -1,10 +1,9 @@
 {
-  "id": "module",
-  "title": "New Module",
-  "description": "",
+  "id": "genga",
+  "title": "Genga: System Agnostic Anime Inspired Effects",
+  "description": "Anime Inspired Animations that are system agnostic",
   "version": "#{VERSION}#",
   "library": "false",
-  "manifestPlusVersion": "1.2.0",
   "compatibility": {
     "minimum": 12,
     "verified": 12
@@ -17,18 +16,22 @@
     }
   ],
   "relationships": {
-    "systems": [],
+    "systems": [
+      {
+        "id": "sequencer",
+        "type": "module",
+        "manifest": "https://github.com/fantasycalendar/FoundryVTT-Sequencer/releases/latest/download/module.json",
+        "compatibility": {
+          "minimum": "3.4.9",
+          "verified": "3.4.9"
+        }
+      }
+    ],
     "requires": []
   },
-  "esmodules": [
-    "scripts/module.js"
-  ],
-  "scripts": [
-    "scripts/lib/lib.js"
-  ],
-  "styles": [
-    "styles/module.css"
-  ],
+  "esmodules": ["scripts/module.js"],
+  "scripts": ["scripts/lib/lib.js"],
+  "styles": ["styles/module.css"],
   "languages": [
     {
       "lang": "en",
