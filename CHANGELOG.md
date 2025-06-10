@@ -1,3 +1,9 @@
+## Unadded
+
+- **New**
+  - Migrated over the following from `Pf2e RPG Numbers`
+    - **Criticals** - `Persona 5`, `Fire Emblem: Awakening`, `Fullscreen`, `Disgaea 7`
+
 ## 0.2.0
 
 - **New**
