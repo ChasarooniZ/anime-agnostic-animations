@@ -8,7 +8,7 @@
  * @returns {Promise<Sequence>} A promise that resolves to the played Sequence.
  */
 
-import { MODULE_ID } from "../../lib/const";
+import { MODULE_ID } from "../../lib/const.js";
 
 export async function sekiroDeath(options = {}) {
   const text = options.text.toUpperCase();

@@ -8,7 +8,8 @@
  * @returns {Promise<Sequence>} A promise that resolves to the played Sequence.
  */
 
-import { getTextWidth } from "./fromSoftwareText";
+import { MODULE_ID } from "../../lib/const.js";
+import { getTextWidth } from "./fromSoftwareText.js";
 
 export async function eldenRingNounVerbed(options = {}) {
   const text = options.text.toUpperCase();

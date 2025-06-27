@@ -10,6 +10,7 @@
 
 import { MODULE_ID } from "../../lib/const.js";
 
+
 export async function eldenRingDeath(options = {}) {
   const text = options.text.toUpperCase();
   const sound = options.sound;

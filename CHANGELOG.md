@@ -1,4 +1,9 @@
+## 0.4.1
+
+- Fixed build errors
+
 ## 0.4.0
+
 - **New**
   - Migrated over the following from `Pf2e RPG Numbers`
     - **Text**
@@ -8,10 +13,10 @@
         - `Sekiro: Death`
 
 ## 0.3.1
+
 - **Updated**
   - `V13` support
   - Fixed issue with `MODULE_ID` being incorrect
-
 
 ## 0.3.0
 
