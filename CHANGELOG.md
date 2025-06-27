@@ -1,3 +1,12 @@
+## 0.4.0
+- **New**
+  - Migrated over the following from `Pf2e RPG Numbers`
+    - **Text**
+      - `From Software`
+        - `Elden Ring: Noun Verbed`
+        - `Elden Ring: Death`
+        - `Sekiro: Death`
+
 ## 0.3.1
 - **Updated**
   - `V13` support

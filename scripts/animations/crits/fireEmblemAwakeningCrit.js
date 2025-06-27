@@ -17,8 +17,7 @@ export async function fireEmblemAwakeningCrit(actor, users, config) {
   const padding = windowHeight / 10;
   const rectangleHeight = windowHeight + padding * 2;
   const windowWidth = screen.width;
-
-  //Sequencer.Preloader.preloadForClients([config.art, config.sfx]);
+  
   new Sequence({ moduleName: game.modules.get(MODULE_ID).title })
     //background
     .effect()
