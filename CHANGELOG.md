@@ -1,3 +1,7 @@
+## 0.4.2
+
+- Fixed issue with `Fullscreen Crit`
+
 ## 0.4.1
 
 - Fixed build errors

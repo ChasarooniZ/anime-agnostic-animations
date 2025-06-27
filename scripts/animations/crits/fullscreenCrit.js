@@ -10,11 +10,7 @@
 
 import { MODULE_ID } from "../../lib/const.js";
 
-export async function fullscreenCrit(
-  actor,
-  users,
-  config
-) {
+export async function fullscreenCrit(actor, users, config) {
   const seq = new Sequence({ moduleName: game.modules.get(MODULE_ID).title })
     //Mask + image
     .effect()
@@ -40,7 +36,7 @@ export async function fullscreenCrit(
     .screenSpaceAboveUI()
     .forUsers(users);
 
-  if (!config.art.endsWith(".webm")) seq.duration(duration);
+  if (!config.art.endsWith(".webm")) seq.duration(config.duration);
 
   //Sound
   seq
