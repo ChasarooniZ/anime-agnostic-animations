@@ -1,4 +1,4 @@
-## Unadded
+## 0.3.0
 
 - **New**
   - Migrated over the following from `Pf2e RPG Numbers`
