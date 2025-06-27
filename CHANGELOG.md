@@ -1,3 +1,9 @@
+## 0.3.1
+- **Updated**
+  - `V13` support
+  - Fixed issue with `MODULE_ID` being incorrect
+
+
 ## 0.3.0
 
 - **New**

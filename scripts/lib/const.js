@@ -1,4 +1,4 @@
-export const MODULE_ID = "GENGA";
+export const MODULE_ID = "genga";
 export const DEFAULT_CRIT_CONFIG = {
   art: "icons/svg/cowled.svg",
   rotation: 0,
