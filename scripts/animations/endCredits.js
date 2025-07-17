@@ -37,7 +37,7 @@ export async function endCredits(credits) {
   }
 
   let i = 0;
-  for (line of lines) {
+  for (let line of lines) {
     if (line.trim() !== "") {
       seq
         .effect()

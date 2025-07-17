@@ -1,3 +1,4 @@
+import { MODULE_ID } from "../lib/const.js";
 import { tokenImage } from "../lib/misc.js";
 
 export async function demonSlayerTransition(
@@ -25,7 +26,7 @@ export async function demonSlayerTransition(
 
   const anchorAMT = Math.round((1 / (final_art.length + 1)) * 10) / 10;
 
-  let seq = new Sequence()
+  let seq = new Sequence({ moduleName: game.modules.get(MODULE_ID).title })
     .sound()
     .file(sfx)
     .volume(volume)

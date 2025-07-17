@@ -8,6 +8,7 @@ import { eldenRingDeath } from "./animations/fromSoftwareText/deathEldenRing.js"
 import { sekiroDeath } from "./animations/fromSoftwareText/deathSekiro.js";
 import { eldenRingNounVerbed } from "./animations/fromSoftwareText/nounVerbedEldenRing.js";
 import { jojoMenacingScreenSize } from "./animations/jojo-menacing-screen-size.js";
+import { toBeContinued } from "./animations/to-be-continued.js";
 import { DEFAULT_CRIT_CONFIG } from "./lib/const.js";
 
 export function setupAPI() {
@@ -16,6 +17,7 @@ export function setupAPI() {
       demonSlayerTransition: demonSlayerTransition,
       jojoMenacingScreenSize: jojoMenacingScreenSize,
       endCredits: endCredits,
+      toBeContinued: toBeContinued,
       crit: {
         disgaea7: (actor, users, config) =>
           disgaea7Crit(

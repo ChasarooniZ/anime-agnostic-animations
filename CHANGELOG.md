@@ -1,3 +1,12 @@
+## 0.5.0
+
+- **New**
+  - `To Be Continued`
+    - New animation to be continued
+    - Run it a second time to stop the song and remove the sepia filter
+- **Fixed**
+  - `JoJo's Menacing` not working due to vestigial code
+
 ## 0.4.2
 
 - Fixed issue with `Fullscreen Crit`

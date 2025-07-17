@@ -1,8 +1,9 @@
+import { MODULE_ID } from "../lib/const.js";
+
 export function jojoMenacingScreenSize() {
   const menacing = "ゴ";
   const screenWidth = window.screen.availWidth;
   const screenHeight = window.screen.availHeight;
-  const img = token?.document?.texture?.src;
   const scaleChange = 0.05;
   const duration = 5 * 1000;
   const chatWidth = chat.offsetWidth;
@@ -22,7 +23,7 @@ export function jojoMenacingScreenSize() {
     strokeThickness: 3,
   };
 
-  const seq = new Sequence();
+  const seq = new Sequence({ moduleName: game.modules.get(MODULE_ID).title });
 
   for (let i = 0; i < menaceCount; i++) {
     const delay = timeBetween * i;

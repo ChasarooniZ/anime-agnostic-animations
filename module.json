@@ -49,6 +49,7 @@
       }
     }
   ],
+  "socket": true,
   "url": "#{URL}#",
   "manifest": "#{MANIFEST}#",
   "download": "#{DOWNLOAD}#",
