@@ -1,5 +1,7 @@
-2025/07/17-19:33:18.253226 ffff7affd0c0 Log #245: 0 ops saved to Table #248 OK
-2025/07/17-19:33:18.253256 ffff7affd0c0 Archiving /home/ubuntu/foundryuserdata/Data/modules/genga/packs/genga-animations/000245.log: OK
-2025/07/17-19:33:18.253287 ffff7affd0c0 Table #247: 3 entries OK
-2025/07/17-19:33:18.253331 ffff7affd0c0 Archiving /home/ubuntu/foundryuserdata/Data/modules/genga/packs/genga-animations/MANIFEST-000243: OK
-2025/07/17-19:33:18.255431 ffff7affd0c0 **** Repaired leveldb /home/ubuntu/foundryuserdata/Data/modules/genga/packs/genga-animations; recovered 1 files; 2044 bytes. Some data may have been lost. ****
+2025/07/22-06:43:25.801972 ffff7a7fc0c0 Recovering log #280
+2025/07/22-06:43:25.806476 ffff7a7fc0c0 Delete type=3 #278
+2025/07/22-06:43:25.806499 ffff7a7fc0c0 Delete type=0 #280
+2025/07/22-15:32:23.451459 ffff796f30c0 Level-0 table #285: started
+2025/07/22-15:32:23.451474 ffff796f30c0 Level-0 table #285: 0 bytes OK
+2025/07/22-15:32:23.452951 ffff796f30c0 Delete type=0 #283
+2025/07/22-15:32:23.455955 ffff796f30c0 Manual compaction at level-0 from '!macros!MK1nYdkmfc44XoLL' @ 72057594037927935 : 1 .. '!macros!fjdX7YBkhVMOtOf3' @ 0 : 0; will stop at (end)
