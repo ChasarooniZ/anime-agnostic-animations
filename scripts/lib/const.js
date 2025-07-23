@@ -7,6 +7,7 @@ export const DEFAULT_CRIT_CONFIG = {
   sfx: "",
   duration: 2000,
   delay: 0,
+  volume: 0.8
 };
 
 export const PERSONA5_POLYGON_POINTS = [

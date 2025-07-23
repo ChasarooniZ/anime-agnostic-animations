@@ -1,3 +1,10 @@
+## 0.6.0
+
+- **New**
+  - `Crit`
+    - `Darkest Dungeon Crisis` - Crit based on the Darkest Dungeon Crisis Effect
+    - `Darkest Dungeon Virtue` - Crit based on the Darkest Dungeon Virtue Effect
+
 ## 0.5.1
 
 - Actually include the packs

@@ -1,3 +1,4 @@
+import { darkestDungeonCrisisCrit, darkestDungeonVirtueCrit } from "./animations/crits/darkestDungeonCrit.js";
 import { disgaea7Crit } from "./animations/crits/disgaea7Crit.js";
 import { fireEmblemAwakeningCrit } from "./animations/crits/fireEmblemAwakeningCrit.js";
 import { fullscreenCrit } from "./animations/crits/fullscreenCrit.js";
@@ -19,6 +20,20 @@ export function setupAPI() {
       endCredits: endCredits,
       toBeContinued: toBeContinued,
       crit: {
+        darkestDungeon: {
+          crisis: (actor, users, config) =>
+            darkestDungeonCrisisCrit(
+              actor,
+              users || [...game.users.keys()],
+              config || DEFAULT_CRIT_CONFIG
+            ),
+          virtue: (actor, users, config) =>
+            darkestDungeonVirtueCrit(
+              actor,
+              users || [...game.users.keys()],
+              config || DEFAULT_CRIT_CONFIG
+            ),
+        },
         disgaea7: (actor, users, config) =>
           disgaea7Crit(
             actor,
