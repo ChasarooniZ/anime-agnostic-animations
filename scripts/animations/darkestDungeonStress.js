@@ -1,4 +1,5 @@
 import { MODULE_ID } from "../lib/const.js";
+import { getVisibleUsers } from "../lib/misc.js";
 
 const STRESS_IMG = "modules/genga/assets/darkest-dungeon/DD_STRESS.webp";
 const RELIEF_IMG = "modules/genga/assets/darkest-dungeon/DD_VIRTUE_FG.webp";
@@ -13,8 +14,10 @@ export function darkestDungeonStress(tokens, config) {
     const volume = config?.volume ?? 1;
 
 
+
     const seq = new Sequence({ moduleName: game.modules.get(MODULE_ID).title })
     for (const [index, tok] of tokens.entries()) {
+        const users = getVisibleUsers(tok);
         seq
             .effect()
             .file(isStress ? STRESS_IMG : RELIEF_IMG)
@@ -27,10 +30,12 @@ export function darkestDungeonStress(tokens, config) {
             .delay(delayPerToken * index)
             .loopProperty("sprite", "scale.x", { from: 1, to: 1.05, delay: duration / 6, duration: 300, pingPong: true })
             .loopProperty("sprite", "scale.y", { from: 1, to: 1.05, delay: duration / 6, duration: 300, pingPong: true })
+            .forUsers(users)
             .sound()
             .file(isStress ? STRESS_SFX : RELIEF_SFX)
             .volume(volume)
             .delay(delayPerToken * index)
+            .forUsers(users)
     }
     seq.play({ preload: true });
 }
