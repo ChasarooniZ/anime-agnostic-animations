@@ -1,3 +1,8 @@
+## 0.7.1
+
+- **Updated**
+  - `Darkest Dungeon Stress` - Added property to select which users can be shown it at all
+
 ## 0.7.0
 
 - **New**

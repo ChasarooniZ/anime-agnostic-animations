@@ -12,12 +12,13 @@ export function darkestDungeonStress(tokens, config) {
     const duration = config?.duration || 1500;
     const delayPerToken = config?.delayPerToken ?? 150;
     const volume = config?.volume ?? 1;
+    const usersPassed = config?.users ?? game.users.contents.map(u => u.id);
 
 
 
     const seq = new Sequence({ moduleName: game.modules.get(MODULE_ID).title })
     for (const [index, tok] of tokens.entries()) {
-        const users = getVisibleUsers(tok);
+        const users = getVisibleUsers(tok).filter(user => usersPassed.includes(user));
         seq
             .effect()
             .file(isStress ? STRESS_IMG : RELIEF_IMG)
