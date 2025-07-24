@@ -1,3 +1,9 @@
+## 0.7.0
+
+- **New**
+  - `Darkest Dungeon Stress` - Stress animation from darkest dungeon that plays on tokens
+  - also features alternatively a Relief animation
+
 ## 0.6.0
 
 - **New**

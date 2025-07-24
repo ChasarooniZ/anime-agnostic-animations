@@ -3,6 +3,7 @@ import { disgaea7Crit } from "./animations/crits/disgaea7Crit.js";
 import { fireEmblemAwakeningCrit } from "./animations/crits/fireEmblemAwakeningCrit.js";
 import { fullscreenCrit } from "./animations/crits/fullscreenCrit.js";
 import { persona5Crit } from "./animations/crits/persona5Crit.js";
+import { darkestDungeonStress } from "./animations/darkestDungeonStress.js";
 import { demonSlayerTransition } from "./animations/demon-slayer-transition.js";
 import { endCredits } from "./animations/endCredits.js";
 import { eldenRingDeath } from "./animations/fromSoftwareText/deathEldenRing.js";
@@ -19,6 +20,7 @@ export function setupAPI() {
       jojoMenacingScreenSize: jojoMenacingScreenSize,
       endCredits: endCredits,
       toBeContinued: toBeContinued,
+      darkestDungeonStress: darkestDungeonStress,
       crit: {
         darkestDungeon: {
           crisis: (actor, users, config) =>
