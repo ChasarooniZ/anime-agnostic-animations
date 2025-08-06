@@ -41,6 +41,7 @@ function darkestDungeonCrit(actor, type, users, config) {
         .fadeOut(duration / 8, { ease: "easeInQuint" })
         .delay(config.delay)
         .zIndex(1)
+        .forUsers(users)
         //Symbol
         .effect()
         .file(FILE[type].FG)
@@ -52,6 +53,7 @@ function darkestDungeonCrit(actor, type, users, config) {
         .fadeOut(duration / 8, { ease: "easeInQuint" })
         .delay(config.delay)
         .zIndex(2)
+        .forUsers(users)
         // Character
         .effect()
         .file(config.art)
@@ -65,6 +67,7 @@ function darkestDungeonCrit(actor, type, users, config) {
         .fadeOut(duration / 8, { ease: "easeInQuint" })
         .delay(config.delay)
         .zIndex(3)
+        .forUsers(users)
         //Sound
         .sound()
         .file(config.sfx)
@@ -72,6 +75,7 @@ function darkestDungeonCrit(actor, type, users, config) {
         .volume(config.volume)
         .forUsers(users)
         .delay(config.delay)
+        .forUsers(users)
 
         .play({ preload: true })
 

@@ -1,3 +1,7 @@
+## 0.7.2
+- **Updated**
+  - `Darkest Dungeon Crisis/Virtue` - Fixed issue where users filter was not being passed (🐛 @TheTenk)
+
 ## 0.7.1
 
 - **Updated**
