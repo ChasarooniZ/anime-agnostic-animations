@@ -17,7 +17,7 @@ export async function fireEmblemAwakeningCrit(actor, users, config) {
   const padding = windowHeight / 10;
   const rectangleHeight = windowHeight + padding * 2;
   const windowWidth = screen.width;
-  
+
   new Sequence({ moduleName: game.modules.get(MODULE_ID).title })
     //background
     .effect()
@@ -49,7 +49,7 @@ export async function fireEmblemAwakeningCrit(actor, users, config) {
     .screenSpacePosition({ x: 0, y: -rectangleHeight / 2 })
     .screenSpaceAnchor({ x: 0, y: 0.5 })
     .forUsers(users)
-    .delay(config.delay)
+    .delay(config.delay + (config?.imagedelay ?? 0))
     .screenSpaceAboveUI()
     //Image
     .effect()
@@ -84,7 +84,7 @@ export async function fireEmblemAwakeningCrit(actor, users, config) {
     })
     .duration(config.duration)
     .forUsers(users)
-    .delay(config.delay)
+    .delay(config.delay + (config?.imagedelay ?? 0))
     //Sound
     .sound()
     .file(config.sfx)

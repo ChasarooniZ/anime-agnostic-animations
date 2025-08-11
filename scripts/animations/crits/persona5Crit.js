@@ -53,7 +53,7 @@ export function persona5Crit(actor, users, config) {
         .zIndex(-1)
         .duration(config.duration)
         .forUsers(users)
-        .delay(config.delay)
+        .delay(config.delay + (config?.imagedelay ?? 0))
         // Video
         .effect()
         .syncGroup(`p5-crit-${actor?.uuid}`)
@@ -70,7 +70,7 @@ export function persona5Crit(actor, users, config) {
         .screenSpaceAboveUI()
         .duration(config.duration)
         .forUsers(users)
-        .delay(config.delay)
+        .delay(config.delay + (config?.imagedelay ?? 0))
         // Outline
         .effect()
         .syncGroup(`p5-crit-${actor?.uuid}`)
@@ -87,7 +87,7 @@ export function persona5Crit(actor, users, config) {
         .screenSpaceAboveUI()
         .duration(config.duration)
         .forUsers(users)
-        .delay(config.delay)
+        .delay(config.delay + (config?.imagedelay ?? 0))
         // Sound
         .sound()
         .file(config.sfx)
@@ -114,7 +114,7 @@ export function persona5Crit(actor, users, config) {
       .zIndex(-1)
       .duration(config.duration)
       .forUsers(users)
-      .delay(config.delay)
+      .delay(config.delay + (config?.imagedelay ?? 0))
       // Image
       .effect()
       .syncGroup(`p5-crit-${actor?.uuid}`)
@@ -144,7 +144,7 @@ export function persona5Crit(actor, users, config) {
       .screenSpaceAboveUI()
       .duration(config.duration)
       .forUsers(users)
-      .delay(config.delay)
+      .delay(config.delay + (config?.imagedelay ?? 0))
       // Outline
       .effect()
       .syncGroup(`p5-crit-${actor?.uuid}`)
@@ -161,7 +161,7 @@ export function persona5Crit(actor, users, config) {
       .screenSpaceAboveUI()
       .duration(config.duration)
       .forUsers(users)
-      .delay(config.delay)
+      .delay(config.delay + (config?.imagedelay ?? 0))
       // Sound
       .sound()
       .file(config.sfx)

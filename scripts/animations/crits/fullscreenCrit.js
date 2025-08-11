@@ -34,7 +34,8 @@ export async function fullscreenCrit(actor, users, config) {
       y: 0.5 + config?.offset?.y,
     })
     .screenSpaceAboveUI()
-    .forUsers(users);
+    .forUsers(users)
+    .delay(config.delay + (config?.imagedelay ?? 0));
 
   if (!config.art.endsWith(".webm")) seq.duration(config.duration);
 

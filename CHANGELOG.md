@@ -1,4 +1,10 @@
+## 0.7.3
+
+- **Updated**
+  - `Crit` - added new option `imagedelay` to delay when the image part of the animation shows up
+
 ## 0.7.2
+
 - **Updated**
   - `Darkest Dungeon Crisis/Virtue` - Fixed issue where users filter was not being passed (🐛 @TheTenk)
 

@@ -39,7 +39,7 @@ function darkestDungeonCrit(actor, type, users, config) {
         .duration(duration)
         .fadeIn(duration / 4, { ease: "easeOutSine" })
         .fadeOut(duration / 8, { ease: "easeInQuint" })
-        .delay(config.delay)
+        .delay(config.delay + (config?.imagedelay ?? 0))
         .zIndex(1)
         .forUsers(users)
         //Symbol
@@ -51,7 +51,7 @@ function darkestDungeonCrit(actor, type, users, config) {
         .duration(duration)
         .fadeIn(duration / 4, { ease: "easeOutSine" })
         .fadeOut(duration / 8, { ease: "easeInQuint" })
-        .delay(config.delay)
+        .delay(config.delay + (config?.imagedelay ?? 0))
         .zIndex(2)
         .forUsers(users)
         // Character
@@ -65,7 +65,7 @@ function darkestDungeonCrit(actor, type, users, config) {
         .spriteRotation(config.rotation)
         .fadeIn(duration / 4, { ease: "easeOutSine" })
         .fadeOut(duration / 8, { ease: "easeInQuint" })
-        .delay(config.delay)
+        .delay(config.delay + (config?.imagedelay ?? 0))
         .zIndex(3)
         .forUsers(users)
         //Sound

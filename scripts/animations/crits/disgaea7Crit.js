@@ -24,6 +24,7 @@ export async function disgaea7Crit(actor, users, config) {
     new Sequence({ moduleName: game.modules.get(MODULE_ID).title })
       //BG start
       .effect()
+      .delay(config.delay + (config?.imagedelay ?? 0))
       .syncGroup(`disgaea-7-crit-${actor.uuid}`)
       .shape("rectangle", {
         //isMask: true,
@@ -90,11 +91,12 @@ export async function disgaea7Crit(actor, users, config) {
       })
       .screenSpaceAboveUI()
       .zIndex(-1)
-      .delay((config.duration * 0.9) / 4)
+      .delay((config.duration * 0.9) / 4 + config.delay + (config?.imagedelay ?? 0))
       .forUsers(users)
       .duration(config.duration * 0.775)
       //Mask + image
       .effect()
+      .delay(config.delay + (config?.imagedelay ?? 0))
       .syncGroup(`disgaea-7-crit-${actor.uuid}`)
       .file(config.art, {
         antialiasing: 1,
