@@ -51,6 +51,3 @@ function getParams(dx, dy, duration, padding) {
     },
   ];
 }
-
-const targetLocation = game.user.targets.first().center;
-dodgeTarget(token, targetLocation);

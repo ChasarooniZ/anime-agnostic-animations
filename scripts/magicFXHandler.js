@@ -7,7 +7,7 @@ export function setupTokenMagicFX() {
       MODULE_ID,
       "token-magic-fx.ask-disable-template-handling",
     ) &&
-    game.settings.get(MODULE_ID, "token-magic-fx.ask-disable-template-handling")
+    game.settings.get("tokenmagic", "autoTemplateEnabled")
   ) {
     game.settings.set(
       MODULE_ID,
