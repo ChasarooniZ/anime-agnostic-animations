@@ -2,6 +2,7 @@
 
 ## 1.0.0
 
+- Updated to fvtt `v14`
 - **New**
   - `Token`
     - **Rotate to Target**
