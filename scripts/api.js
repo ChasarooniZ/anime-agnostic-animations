@@ -11,6 +11,9 @@ import { sekiroDeath } from "./animations/fromSoftwareText/deathSekiro.js";
 import { eldenRingNounVerbed } from "./animations/fromSoftwareText/nounVerbedEldenRing.js";
 import { jojoMenacingScreenSize } from "./animations/jojo-menacing-screen-size.js";
 import { toBeContinued } from "./animations/to-be-continued.js";
+import { dodgeTarget } from "./animations/token/dodgeTarget.js";
+import { rotateToTarget } from "./animations/token/rotateTowardsTarget.js";
+import { shakeToken } from "./animations/token/shakeToken.js";
 import { DEFAULT_CRIT_CONFIG } from "./lib/const.js";
 
 export function setupAPI() {
@@ -70,6 +73,11 @@ export function setupAPI() {
           eldenRing: eldenRingNounVerbed,
         },
       },
+      token: {
+        shakeToken,
+        dodgeTarget,
+        rotateToTarget
+      }
     },
   };
 }

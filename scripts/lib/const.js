@@ -69,3 +69,4 @@ export const PERSONA5_POLYGON_POINTS = [
   [0.06, 0.7],
   [-0.1, 0.73],
 ];
+export const NINETY_DEG_IN_RADIANS = Math.PI / 2;

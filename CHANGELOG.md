@@ -1,3 +1,11 @@
+## Unreleased
+
+- **New**
+  - `Token`
+    - **Rotate to Target**
+    - **Dodge Target**
+    - **Shake Token**
+
 ## 0.7.3
 
 - **Updated**
