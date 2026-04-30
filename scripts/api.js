@@ -1,4 +1,7 @@
-import { darkestDungeonCrisisCrit, darkestDungeonVirtueCrit } from "./animations/crits/darkestDungeonCrit.js";
+import {
+  darkestDungeonCrisisCrit,
+  darkestDungeonVirtueCrit,
+} from "./animations/crits/darkestDungeonCrit.js";
 import { disgaea7Crit } from "./animations/crits/disgaea7Crit.js";
 import { fireEmblemAwakeningCrit } from "./animations/crits/fireEmblemAwakeningCrit.js";
 import { fullscreenCrit } from "./animations/crits/fullscreenCrit.js";
@@ -10,7 +13,12 @@ import { eldenRingDeath } from "./animations/fromSoftwareText/deathEldenRing.js"
 import { sekiroDeath } from "./animations/fromSoftwareText/deathSekiro.js";
 import { eldenRingNounVerbed } from "./animations/fromSoftwareText/nounVerbedEldenRing.js";
 import { jojoMenacingScreenSize } from "./animations/jojo-menacing-screen-size.js";
+import { createFinishingMoveBBB } from "./animations/text/finishingMoveBBB.js";
 import { toBeContinued } from "./animations/to-be-continued.js";
+import { bounceOffTarget } from "./animations/token/bounceOffTarget.js";
+import { dodgeTarget } from "./animations/token/dodgeTarget.js";
+import { rotateToTarget } from "./animations/token/rotateTowardsTarget.js";
+import { shakeToken } from "./animations/token/shakeToken.js";
 import { DEFAULT_CRIT_CONFIG } from "./lib/const.js";
 
 export function setupAPI() {
@@ -27,39 +35,44 @@ export function setupAPI() {
             darkestDungeonCrisisCrit(
               actor,
               users || [...game.users.keys()],
-              config || DEFAULT_CRIT_CONFIG
+              config || DEFAULT_CRIT_CONFIG,
             ),
           virtue: (actor, users, config) =>
             darkestDungeonVirtueCrit(
               actor,
               users || [...game.users.keys()],
-              config || DEFAULT_CRIT_CONFIG
+              config || DEFAULT_CRIT_CONFIG,
             ),
         },
         disgaea7: (actor, users, config) =>
           disgaea7Crit(
             actor,
             users || [...game.users.keys()],
-            config || DEFAULT_CRIT_CONFIG
+            config || DEFAULT_CRIT_CONFIG,
           ),
         fireEmblemAwakening: (actor, users, config) =>
           fireEmblemAwakeningCrit(
             actor,
             users || [...game.users.keys()],
-            config || DEFAULT_CRIT_CONFIG
+            config || DEFAULT_CRIT_CONFIG,
           ),
         fullscreen: (actor, users, config) =>
           fullscreenCrit(
             actor,
             users || [...game.users.keys()],
-            config || DEFAULT_CRIT_CONFIG
+            config || DEFAULT_CRIT_CONFIG,
           ),
         persona5: (actor, users, config) =>
           persona5Crit(
             actor,
             users || [...game.users.keys()],
-            config || DEFAULT_CRIT_CONFIG
+            config || DEFAULT_CRIT_CONFIG,
           ),
+      },
+      text: {
+        finishingMove: {
+          BBB: createFinishingMoveBBB,
+        },
       },
       fromSoftware: {
         death: {
@@ -69,6 +82,12 @@ export function setupAPI() {
         nounVerbed: {
           eldenRing: eldenRingNounVerbed,
         },
+      },
+      token: {
+        shakeToken,
+        dodgeTarget,
+        rotateToTarget,
+        bounceOffTarget,
       },
     },
   };

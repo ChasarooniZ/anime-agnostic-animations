@@ -7,7 +7,7 @@ export const DEFAULT_CRIT_CONFIG = {
   sfx: "",
   duration: 2000,
   delay: 0,
-  volume: 0.8
+  volume: 0.8,
 };
 
 export const PERSONA5_POLYGON_POINTS = [
@@ -69,3 +69,13 @@ export const PERSONA5_POLYGON_POINTS = [
   [0.06, 0.7],
   [-0.1, 0.73],
 ];
+export const NINETY_DEG_IN_RADIANS = Math.PI / 2;
+
+export const CONST = {
+  BOUNCE: {
+    ROTATION: { OPPOSITE: 180, OFFSET: 65 },
+    ANCHOR: { BURST: { x: 0.1, y: 0.5 }, SPARK: { x: 0.9, y: 0.5 } },
+    SIZE_MULT: { SPARK: 1.2 * 2 },
+    DELAY_FINISH: { SPARK: -150 },
+  },
+};

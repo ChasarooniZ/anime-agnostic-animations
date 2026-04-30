@@ -1,3 +1,17 @@
+## Unreleased
+
+## 1.0.0
+
+- Updated to fvtt `v14`
+- **New**
+  - `Token`
+    - **Rotate to Target**
+    - **Dodge Target**
+    - **Shake Token**
+    - **Attack Bounce off Token**
+  - `Text`
+    - `Finishing Move - BBB` - Finishing move text from Kekkai Sensen
+
 ## 0.7.3
 
 - **Updated**
