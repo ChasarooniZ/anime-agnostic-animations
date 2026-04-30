@@ -11,6 +11,7 @@ import { sekiroDeath } from "./animations/fromSoftwareText/deathSekiro.js";
 import { eldenRingNounVerbed } from "./animations/fromSoftwareText/nounVerbedEldenRing.js";
 import { jojoMenacingScreenSize } from "./animations/jojo-menacing-screen-size.js";
 import { toBeContinued } from "./animations/to-be-continued.js";
+import { bounceOffTarget } from "./animations/token/bounceOffTarget.js";
 import { dodgeTarget } from "./animations/token/dodgeTarget.js";
 import { rotateToTarget } from "./animations/token/rotateTowardsTarget.js";
 import { shakeToken } from "./animations/token/shakeToken.js";
@@ -76,7 +77,8 @@ export function setupAPI() {
       token: {
         shakeToken,
         dodgeTarget,
-        rotateToTarget
+        rotateToTarget,
+        bounceOffTarget
       }
     },
   };

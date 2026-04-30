@@ -5,6 +5,7 @@
     - **Rotate to Target**
     - **Dodge Target**
     - **Shake Token**
+    - **Attack Bounce off Token**
 
 ## 0.7.3
 
