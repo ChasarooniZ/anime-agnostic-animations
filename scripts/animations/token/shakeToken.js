@@ -4,6 +4,10 @@ export async function shakeToken(
   shakes,
   duration,
 ) {
+  if (!TokenMagic) {
+    console.error("Missing Token Magic FX");
+    return;
+  }
   const params = [
     {
       filterType: "transform",

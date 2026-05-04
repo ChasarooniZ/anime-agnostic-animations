@@ -1,6 +1,10 @@
 import { NINETY_DEG_IN_RADIANS } from "../../lib/const.js";
 
 export async function dodgeTarget(token, targetLocation) {
+  if (!TokenMagic) {
+    console.error("Missing Token Magic FX");
+    return;
+  }
   const scale = 0.2;
   const ray = new Ray(token.center, targetLocation);
   const { dx, dy } = Ray.fromAngle(

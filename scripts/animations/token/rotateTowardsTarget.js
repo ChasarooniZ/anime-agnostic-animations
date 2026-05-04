@@ -6,6 +6,10 @@
  * @returns
  */
 export async function rotateToTarget(token, targetLocation, offset) {
+  if (!TokenMagic) {
+    console.error("Missing Token Magic FX");
+    return;
+  }
   const ray = new Ray(token.center, targetLocation);
   const angleToTarget = Math.toDegrees(ray.angle);
   const currAngle = token.document.rotation;

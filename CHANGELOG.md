@@ -1,5 +1,11 @@
 ## Unreleased
 
+## 1.0.1
+
+- Updated required Sequencer to `4.0.2` to fix bugs
+- Made `Token Magic FX` recommended instead of required for those who don't want it
+- Added a error message if trying to use something you odn't have perms for
+
 ## 1.0.0
 
 - Updated to fvtt `v14`

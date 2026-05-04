@@ -23,10 +23,12 @@
         "type": "module",
         "manifest": "https://github.com/fantasycalendar/FoundryVTT-Sequencer/releases/latest/download/module.json",
         "compatibility": {
-          "minimum": "4.0.1",
-          "verified": "4.0.1"
+          "minimum": "4.0.2",
+          "verified": "4.0.2"
         }
-      },
+      }
+    ],
+    "recommends": [
       {
         "id": "tokenmagic",
         "type": "module",

@@ -3,6 +3,7 @@ import { MODULE_ID } from "./lib/const.js";
 export function setupTokenMagicFX() {
   if (
     game.user.isGM &&
+    TokenMagic &&
     game.settings.get(
       MODULE_ID,
       "token-magic-fx.ask-disable-template-handling",
