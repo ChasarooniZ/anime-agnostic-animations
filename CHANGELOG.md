@@ -1,5 +1,11 @@
 ## Unreleased
 
+## 1.1.0
+
+- **New**
+  - `Token`
+    - **Bounce to Target**
+
 ## 1.0.2
 
 - Updated required Sequencer to `4.0.2` to fix bugs

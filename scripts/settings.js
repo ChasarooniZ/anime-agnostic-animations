@@ -8,7 +8,7 @@ export function setupSettings() {
       name: "",
       hint: "",
       scope: "world",
-      config: true,
+      config: false,
       default: true,
       type: Boolean,
     },
