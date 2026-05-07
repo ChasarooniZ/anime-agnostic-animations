@@ -1,5 +1,9 @@
 ## Unreleased
 
+## 1.1.1
+
+- Added an example macro for `Darkest Dungeon - Stress/Relief` feature
+
 ## 1.1.0
 
 - **New**
