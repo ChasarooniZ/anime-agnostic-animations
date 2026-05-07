@@ -1,0 +1,28 @@
+{
+	"name": "To Be Continued",
+	"type": "script",
+	"_id": "PC6CfGK9meEb75UQ",
+	"author": "vj8VUT8j7Wtzy3Y2",
+	"img": "icons/skills/ranged/target-bullseye-archer-orange.webp",
+	"scope": "global",
+	"command": "// To be continued animation from JoJo's\nconst config = {\n    duration: 1500, // How long it takes the arrow to come on screen\n    delay: 2 * 1000, // Delay in MS till the arrow starts\n    scale: 1, // Scale size of the arrow (1 is default)\n    waitDuration: 2000, // Duration for the Arrow to stay on screen\n    song: \"modules/genga/assets/demon-slayer-transitions/bongo-drum-roll.ogg\", //Song to play \n    volume: 0.7, //Song Volume\n}\n\ngame.genga.api.toBeContinued(config)",
+	"folder": null,
+	"sort": 0,
+	"ownership": {
+		"default": 0,
+		"vj8VUT8j7Wtzy3Y2": 3
+	},
+	"flags": {},
+	"_stats": {
+		"compendiumSource": null,
+		"duplicateSource": null,
+		"exportSource": null,
+		"coreVersion": "13.346",
+		"systemId": "pf2e",
+		"systemVersion": "7.2.3",
+		"createdTime": 1752719825284,
+		"modifiedTime": 1752722724193,
+		"lastModifiedBy": "vj8VUT8j7Wtzy3Y2"
+	},
+	"_key": "!macros!PC6CfGK9meEb75UQ"
+}

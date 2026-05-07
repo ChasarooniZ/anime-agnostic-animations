@@ -1,0 +1,28 @@
+{
+	"name": "JoJo's Menacing",
+	"type": "script",
+	"_id": "fjdX7YBkhVMOtOf3",
+	"author": "vj8VUT8j7Wtzy3Y2",
+	"img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+	"scope": "global",
+	"command": "game.genga.api.jojoMenacingScreenSize()",
+	"folder": null,
+	"sort": 0,
+	"ownership": {
+		"default": 0,
+		"vj8VUT8j7Wtzy3Y2": 3
+	},
+	"flags": {},
+	"_stats": {
+		"compendiumSource": null,
+		"duplicateSource": null,
+		"exportSource": null,
+		"coreVersion": "13.346",
+		"systemId": "pf2e",
+		"systemVersion": "7.2.3",
+		"createdTime": 1752718983105,
+		"modifiedTime": 1752719054471,
+		"lastModifiedBy": "vj8VUT8j7Wtzy3Y2"
+	},
+	"_key": "!macros!fjdX7YBkhVMOtOf3"
+}

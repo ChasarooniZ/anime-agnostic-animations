@@ -1,0 +1,32 @@
+{
+	"name": "Demon Slayer Transition",
+	"type": "script",
+	"_id": "MK1nYdkmfc44XoLL",
+	"author": "vj8VUT8j7Wtzy3Y2",
+	"img": "icons/sundries/documents/document-symbol-rune-brown.webp",
+	"scope": "global",
+	"command": "/**\n * Demon Slayer Transition Animation\n * - The Comedic transition animation from demon slayer reimagined\n * \n * Note: by default, if you have not tokens selected it will use player's character token images\n *  otherwise it will use the token images of your selected tokens\n * SETTINGS\n * useConfig - Set to true to use the config below\n * Config - can be used to set specific settings of the animation\n *  bg - Background art\n *  art - Array of art of the characters to go accross the screen\n *  useCharacters - Forces to use the characters the players have set on their user\n *  duration - Duration of the animation in MS\n *  sfx - SFX to play with the animation\n *  volume - volume to play the SFX at\n *  sfxDelay - How long in MS to wait before playing the sfx\n */\nconst useConfig = false;\nconst config = {\n    bg: \"modules/genga/assets/demon-slayer-transitions/scuffed_DS_Transition_BG.webp\",\n    art: [\"icons/logo-scifi-blank.png\", \"icons/vtt-512.png\", \"icons/logo-scifi.png\"],\n    useCharacters: false,\n    duration: 2500,\n    sfx: \"modules/genga/assets/demon-slayer-transitions/bongo-drum-roll.ogg\",\n    volume: 0.5,\n    sfxDelay: 0,\n}\nif (!useConfig) {\n    game.genga.api.demonSlayerTransition();\n} else {\n    game.genga.api.demonSlayerTransition(config);\n}",
+	"folder": "7p8AOsyZEXha6u0A",
+	"sort": 0,
+	"ownership": {
+		"default": 0,
+		"vj8VUT8j7Wtzy3Y2": 3
+	},
+	"flags": {
+		"scene-packer": {
+			"hash": "df92a81641ccc7a24ac5221a19d520cb4ccb690f"
+		}
+	},
+	"_stats": {
+		"compendiumSource": null,
+		"duplicateSource": null,
+		"coreVersion": "13.346",
+		"systemId": "pf2e",
+		"systemVersion": "6.11.1",
+		"createdTime": 1746039001216,
+		"modifiedTime": 1746039847662,
+		"lastModifiedBy": "vj8VUT8j7Wtzy3Y2",
+		"exportSource": null
+	},
+	"_key": "!macros!MK1nYdkmfc44XoLL"
+}

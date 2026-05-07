@@ -1,0 +1,28 @@
+{
+	"name": "Darkest Dungeon Stress/Relief",
+	"type": "script",
+	"_id": "3mOtBjgLYz0AVJ9O",
+	"author": "vj8VUT8j7Wtzy3Y2",
+	"img": "icons/magic/control/fear-fright-monster-red.webp",
+	"scope": "global",
+	"command": "// Darkest Dungeon stress pop up animation\nconst tokens = canvas.tokens.controlled;\nconst config = {\n  isStress: true, // If true play Stress animation, if false plays Relief animation\n  delayPerToken: 150, // Delay in MS between tokens\n  volume: 1, // 1 = 100%\n  duration: 1500, // How long to play it in MS\n  users: game.users.contents.map(u => u.id) // list of user IDs to play for\n}\n\n\ngame.genga.api.darkestDungeonStress(tokens, config);",
+	"folder": null,
+	"sort": 0,
+	"ownership": {
+		"default": 0,
+		"vj8VUT8j7Wtzy3Y2": 3
+	},
+	"flags": {},
+	"_stats": {
+		"coreVersion": "14.361",
+		"systemId": "pf2e",
+		"systemVersion": "8.1.1",
+		"createdTime": 1778132351146,
+		"modifiedTime": 1778132680538,
+		"lastModifiedBy": "vj8VUT8j7Wtzy3Y2",
+		"compendiumSource": null,
+		"duplicateSource": null,
+		"exportSource": null
+	},
+	"_key": "!macros!3mOtBjgLYz0AVJ9O"
+}
