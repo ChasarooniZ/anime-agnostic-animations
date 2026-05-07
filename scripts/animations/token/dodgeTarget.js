@@ -1,7 +1,8 @@
 import { NINETY_DEG_IN_RADIANS } from "../../lib/const.js";
+import { isTokenMagicActive } from "../../lib/misc.js";
 
 export async function dodgeTarget(token, targetLocation) {
-  if (!TokenMagic) {
+  if (!isTokenMagicActive()) {
     console.error("Missing Token Magic FX");
     return;
   }

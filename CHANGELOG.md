@@ -1,5 +1,9 @@
 ## Unreleased
 
+## 1.1.2
+
+- Improved check for if token magic is active
+
 ## 1.1.1
 
 - Added an example macro for `Darkest Dungeon - Stress/Relief` feature

@@ -1,10 +1,12 @@
+import { isTokenMagicActive } from "../../lib/misc.js";
+
 export async function shakeToken(
   token,
   shakeDistancePercent,
   shakes,
   duration,
 ) {
-  if (!TokenMagic) {
+  if (!isTokenMagicActive()) {
     console.error("Missing Token Magic FX");
     return;
   }

@@ -1,3 +1,5 @@
+import { isTokenMagicActive } from "../../lib/misc.js";
+
 /**
  *
  * @param {Token} token Token to rotate
@@ -6,7 +8,7 @@
  * @returns
  */
 export async function rotateToTarget(token, targetLocation, offset) {
-  if (!TokenMagic) {
+  if (!isTokenMagicActive()) {
     console.error("Missing Token Magic FX");
     return;
   }

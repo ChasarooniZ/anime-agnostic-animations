@@ -1,5 +1,7 @@
+import { isTokenMagicActive } from "../../lib/misc.js";
+
 export async function bounceToTarget(token, target) {
-  if (!TokenMagic) {
+  if (!isTokenMagicActive()) {
     console.error("Missing Token Magic FX");
     return;
   }

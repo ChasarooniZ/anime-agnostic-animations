@@ -34,3 +34,7 @@ export function getVisibleUsers(tok) {
   }
   return list;
 }
+
+export function isTokenMagicActive() {
+    return game.modules.get('tokenmagic')?.active;
+}
