@@ -10,6 +10,8 @@
 
 System agnostic anime inspired aniamtion animations
 
+*note: this may not be used as a requirement or recommendation for another module*
+
 ## Table of Contents
 
 - [Features](#features)
