@@ -8,7 +8,9 @@
 
 # Genga: System Agnostic Anime Animations
 
-System agnostic anime inspired aniamtion animations
+System agnostic anime inspired animations scripts which can be run with the included macros. This can be used in conjunction with my other modules to run them automatically 
+
+*note: this may not be used as a requirement or recommendation for another module*
 
 ## Table of Contents
 
