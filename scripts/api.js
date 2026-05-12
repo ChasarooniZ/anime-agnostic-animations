@@ -13,6 +13,7 @@ import { eldenRingDeath } from "./animations/fromSoftwareText/deathEldenRing.js"
 import { sekiroDeath } from "./animations/fromSoftwareText/deathSekiro.js";
 import { eldenRingNounVerbed } from "./animations/fromSoftwareText/nounVerbedEldenRing.js";
 import { jojoMenacingScreenSize } from "./animations/jojo-menacing-screen-size.js";
+import { playerEmote } from "./animations/playerEmote.js";
 import { createFinishingMoveBBB } from "./animations/text/finishingMoveBBB.js";
 import { toBeContinued } from "./animations/to-be-continued.js";
 import { bounceOffTarget } from "./animations/token/bounceOffTarget.js";
@@ -20,6 +21,7 @@ import { bounceToTarget } from "./animations/token/bounceToTarget.js";
 import { dodgeTarget } from "./animations/token/dodgeTarget.js";
 import { rotateToTarget } from "./animations/token/rotateTowardsTarget.js";
 import { shakeToken } from "./animations/token/shakeToken.js";
+import { tokenEmote } from "./animations/token/tokenEmote.js";
 import { DEFAULT_CRIT_CONFIG } from "./lib/const.js";
 
 export function setupAPI() {
@@ -84,12 +86,14 @@ export function setupAPI() {
           eldenRing: eldenRingNounVerbed,
         },
       },
+      playerEmote,
       token: {
         shakeToken,
         dodgeTarget,
         rotateToTarget,
         bounceOffTarget,
-        bounceToTarget
+        bounceToTarget,
+        tokenEmote,
       },
     },
   };

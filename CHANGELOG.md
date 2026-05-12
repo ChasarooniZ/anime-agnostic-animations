@@ -1,5 +1,11 @@
 ## Unreleased
 
+## 1.2.0
+
+- **New**
+  - `Token Emote` - Adds api for new token emote api
+  - `Player Emote` - Adds api for new player emote api
+
 ## 1.1.2
 
 - Improved check for if token magic is active
