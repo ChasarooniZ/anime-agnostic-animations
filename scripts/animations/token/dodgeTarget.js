@@ -2,7 +2,7 @@ import { MODULE_ID, NINETY_DEG_IN_RADIANS } from "../../lib/const.js";
 
 export async function dodgeTarget(token, targetLocation) {
   const scale = scaleMod * token?.document?.width * 0.7;
-  const ray = new Ray(token.center, targetLocation);
+  const ray = new Ray(token.center, targetLocation?.center ?? targetLocation);
   const { dx, dy } = Ray.fromAngle(
     0,
     0,

@@ -1,5 +1,9 @@
 ## Unreleased
 
+## 1.3.1
+
+- Misc fixes for `1.3.0` deleted function
+
 ## 1.3.0
 
 - **New**
