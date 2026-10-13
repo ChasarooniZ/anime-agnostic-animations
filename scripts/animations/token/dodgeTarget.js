@@ -1,12 +1,7 @@
-import { NINETY_DEG_IN_RADIANS } from "../../lib/const.js";
-import { isTokenMagicActive } from "../../lib/misc.js";
+import { MODULE_ID, NINETY_DEG_IN_RADIANS } from "../../lib/const.js";
 
 export async function dodgeTarget(token, targetLocation) {
-  if (!isTokenMagicActive()) {
-    console.error("Missing Token Magic FX");
-    return;
-  }
-  const scale = 0.2;
+  const scale = scaleMod * token?.document?.width * 0.7;
   const ray = new Ray(token.center, targetLocation);
   const { dx, dy } = Ray.fromAngle(
     0,
@@ -14,45 +9,31 @@ export async function dodgeTarget(token, targetLocation) {
     ray.angle + NINETY_DEG_IN_RADIANS,
     direction() * scale,
   );
-  const padding = token.w / 2;
-  const duration = 200 * token.document.width + 400;
 
-  const params = getParams(dx, dy, duration, padding);
+  const duration = 100 * token.document.width + 200;
 
-  return TokenMagic.addUpdateFiltersOnSelected(params);
+  new Sequence({
+    moduleName: game.modules.get(MODULE_ID)?.title,
+    softFail: true,
+  })
+    .motion()
+    .on(token)
+    .moveBy(
+      {
+        x: dx,
+        y: dy,
+      },
+      {
+        duration: duration,
+        ease: "easeOutCubic",
+        easeOut: "easeInSine",
+        returnDuration: duration * 1.2,
+        gridUnits: true,
+      },
+    )
+    .play();
 }
 
 function direction() {
   return Math.random() < 0.5 ? -1 : 1;
-}
-
-function getParams(dx, dy, duration, padding) {
-  return [
-    {
-      filterType: "transform",
-      filterId: "savingRoll",
-      autoDestroy: true,
-      padding: padding,
-      pivotX: 0.5,
-      pivotY: 0.5,
-      animated: {
-        translationX: {
-          animType: "cosOscillation",
-          active: true,
-          loopDuration: duration,
-          loops: 1,
-          val1: 0,
-          val2: dx,
-        },
-        translationY: {
-          animType: "cosOscillation",
-          active: true,
-          loopDuration: duration,
-          loops: 1,
-          val1: 0,
-          val2: dy,
-        },
-      },
-    },
-  ];
 }

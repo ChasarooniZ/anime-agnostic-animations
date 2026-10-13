@@ -1,5 +1,3 @@
-import { isTokenMagicActive } from "../../lib/misc.js";
-
 /**
  *
  * @param {Token} token Token to rotate
@@ -8,11 +6,8 @@ import { isTokenMagicActive } from "../../lib/misc.js";
  * @returns
  */
 export async function rotateToTarget(token, targetLocation, offset) {
-  if (!isTokenMagicActive()) {
-    console.error("Missing Token Magic FX");
-    return;
-  }
-  const ray = new Ray(token.center, targetLocation);
+  const duration = 500 + token.document.width * 100;
+  const ray = new Ray(token.center, targetLocation?.center ?? targetLocation);
   const angleToTarget = Math.toDegrees(ray.angle);
   const currAngle = token.document.rotation;
 
@@ -20,32 +15,14 @@ export async function rotateToTarget(token, targetLocation, offset) {
     angleToTarget - currAngle - offset,
   );
 
-  const params = getParams(angleDelta);
-
-  return TokenMagic.addUpdateFiltersOnSelected(params);
-}
-
-function getParams(angleDelta) {
-  return [
-    {
-      filterType: "transform",
-      filterId: "savingRoll",
-      autoDestroy: true,
-      padding: 80,
-      pivotX: 0.5,
-      pivotY: 0.5,
-      animated: {
-        rotation: {
-          animType: "cosOscillation",
-          active: true,
-          loopDuration: 1250,
-          loops: 1,
-          val1: 0,
-          val2: angleDelta,
-        },
-      },
-    },
-  ];
+  new Sequence({
+    moduleName: game.modules.get(MODULE_ID)?.title,
+    softFail: true,
+  })
+    .motion()
+    .on(token)
+    .rotateTo(angleDelta, { duration, ease: "easeOutCubic" })
+    .play();
 }
 
 function getShortestAngleOfRotation(angleDelta) {

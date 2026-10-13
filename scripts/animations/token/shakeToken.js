@@ -1,30 +1,22 @@
-import { isTokenMagicActive } from "../../lib/misc.js";
-
-export async function shakeToken(
+export async function shakeToken({
   token,
-  shakeDistancePercent,
+  shakeDistancePercent = 0.1,
   shakes,
   duration,
-) {
-  if (!isTokenMagicActive()) {
-    console.error("Missing Token Magic FX");
-    return;
-  }
-  const params = [
-    {
-      filterType: "transform",
-      filterId: "tokenShake",
-      autoDestroy: true,
-      animated: {
-        translationX: {
-          animType: "sinOscillation",
-          val1: -shakeDistancePercent,
-          val2: +shakeDistancePercent,
-          loopDuration: duration / shakes,
-          loops: shakes,
-        },
-      },
-    },
-  ];
-  TokenMagic.addFilters(token, params);
+}) {
+  new Sequence({
+    moduleName: game.modules.get(MODULE_ID)?.title,
+    softFail: true,
+  })
+    .motion()
+    .on(token)
+    .oscillate({
+      period: duration / shakes,
+      duration: duration,
+      waveform: "sine",
+      x: { strengthScaledToObject: shakeDistancePercent },
+      fadeInDuration: duration / 16,
+      fadeOutDuration: duration / 8,
+    })
+    .play();
 }

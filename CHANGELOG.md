@@ -1,5 +1,16 @@
 ## Unreleased
 
+## 1.3.0
+
+- **New**
+  - `Dodge Target` - now uses `Motion`
+  - `Rotate Towards Target` - now uses `Motion`
+  - `Shake Token` - now uses `Motion`
+  - `Bounce to Target` - basically hearthstone bounce to guy
+- **Updated**
+  - Removed `Token Magic FX` as a recommendation
+  - Updated minimum requirement for Sequencer to `4.3.0`
+
 ## 1.2.0
 
 - **New**

@@ -1,6 +1,5 @@
 import { setupAPI } from "./api.js";
 import { setupSocket } from "./lib/socket.js";
-import { setupTokenMagicFX } from "./magicFXHandler.js";
 import { setupSettings } from "./settings.js";
 
 Hooks.once("init", async function () { });
@@ -12,6 +11,5 @@ Hooks.once("setup", function () {
 });
 
 Hooks.once("ready", async function () {
-  setupTokenMagicFX()
   setupAPI();
 });

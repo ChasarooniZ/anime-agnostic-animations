@@ -23,16 +23,9 @@
         "type": "module",
         "manifest": "https://github.com/fantasycalendar/FoundryVTT-Sequencer/releases/latest/download/module.json",
         "compatibility": {
-          "minimum": "4.0.2",
-          "verified": "4.0.2"
+          "minimum": "4.3.0",
+          "verified": "4.3.0"
         }
-      }
-    ],
-    "recommends": [
-      {
-        "id": "tokenmagic",
-        "type": "module",
-        "manifest": "https://github.com/Feu-Secret/Tokenmagic/releases/latest/download/module.json"
       }
     ]
   },

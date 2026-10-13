@@ -1,11 +1,3 @@
-export function tokenImage(tokenDoc) {
-  return (
-    (tokenDoc.ring.enabled && tokenDoc.ring.subject.texture) ||
-    tokenDoc.texture.src
-  );
-}
-
-
 /**
  * Get all users that can see the token
  * @param {*} tok Token trying to be seen
@@ -33,8 +25,4 @@ export function getVisibleUsers(tok) {
       }
   }
   return list;
-}
-
-export function isTokenMagicActive() {
-    return game.modules.get('tokenmagic')?.active;
 }
