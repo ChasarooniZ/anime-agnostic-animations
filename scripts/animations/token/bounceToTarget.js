@@ -1,5 +1,11 @@
-export async function bounceToTarget(token, target, distance = canvas.grid.size / 2) {
-  const duration = 150 * token.document.width + 200;
+import { MODULE_ID } from "../../lib/const.js";
+
+export async function bounceToTarget(
+  token,
+  target,
+  distance = canvas.grid.size / 2,
+) {
+  const duration = 50 * token.document.width + 350;
 
   new Sequence({
     moduleName: game.modules.get(MODULE_ID)?.title,
