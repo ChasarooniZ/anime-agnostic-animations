@@ -10,6 +10,7 @@
 - **Updated**
   - Removed `Token Magic FX` as a recommendation
   - Updated minimum requirement for Sequencer to `4.3.0`
+  - Updated release script
 
 ## 1.2.0
 
