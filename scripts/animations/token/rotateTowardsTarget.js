@@ -1,3 +1,5 @@
+import { MODULE_ID } from "../../lib/const.js";
+
 /**
  *
  * @param {Token} token Token to rotate

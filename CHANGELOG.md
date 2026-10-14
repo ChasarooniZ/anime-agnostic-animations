@@ -1,5 +1,9 @@
 ## Unreleased
 
+## 1.3.4
+
+- Fixed missing variable
+
 ## 1.3.3
 
 - Fixed duration of bounce so big tokens aren't as slow
