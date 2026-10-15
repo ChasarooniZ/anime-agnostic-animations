@@ -1,5 +1,9 @@
 ## Unreleased
 
+## 1.3.5
+
+- Even more missing variables ;-;
+
 ## 1.3.4
 
 - Fixed missing variable

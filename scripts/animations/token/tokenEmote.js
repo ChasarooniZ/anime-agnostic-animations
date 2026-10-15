@@ -1,3 +1,5 @@
+import { MODULE_ID } from "../../lib/const.js";
+
 export async function tokenEmote({
   token,
   duration = 2500,
@@ -6,7 +8,10 @@ export async function tokenEmote({
   glowColor = null,
   volume = 0.5,
 }) {
-  const seq = new Sequence()
+  const seq = new Sequence({
+    moduleName: game.modules.get(MODULE_ID)?.title,
+    softFail: true,
+  })
     .effect()
     .file(art)
     .attachTo(token, {

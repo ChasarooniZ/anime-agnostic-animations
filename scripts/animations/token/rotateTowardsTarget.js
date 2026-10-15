@@ -9,7 +9,10 @@ import { MODULE_ID } from "../../lib/const.js";
  */
 export async function rotateToTarget(token, targetLocation, offset) {
   const duration = 500 + token.document.width * 100;
-  const ray = new Ray(token.center, targetLocation?.center ?? targetLocation);
+  const ray = new foundry.canvas.geometry.Ray(
+    token.center,
+    targetLocation?.center ?? targetLocation,
+  );
   const angleToTarget = Math.toDegrees(ray.angle);
   const currAngle = token.document.rotation;
 

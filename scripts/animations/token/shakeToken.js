@@ -1,3 +1,4 @@
+import { MODULE_ID } from "../../lib/const.js";
 export async function shakeToken({
   token,
   shakeDistancePercent = 0.1,
