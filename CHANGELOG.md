@@ -1,5 +1,9 @@
 ## Unreleased
 
+## 1.3.6
+
+- Fixed Issue with dodge Target
+
 ## 1.3.5
 
 - Even more missing variables ;-;
